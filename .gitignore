@@ -1,0 +1,139 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# React Native
+# Logs
+*.log
+metro.config.js
+
+# React Native CLI
+.buckconfig
+.flowconfig
+.watchmanconfig
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+
+# Build outputs
+build/
+dist/
+out/
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# SQLite Database Files
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+logs/
+*.log
+
+# Runtime cache
+.cache/
+.parcel-cache/
+
+# Supabase
+.supabase/
+
+# AWS CLI
+.aws/
+
+# Sentry
+.sentryclirc
+
+# EAS
+.eas/
+
+# Railway
+.railway/
+
+# Redis
+dump.rdb
+
+# Nest.js
+dist/
+.webpack/
+
+# tRPC
+.trpc/
+
+# Expo SecureStore
+SecureStore/
+
+# AI/ML Models (if storing locally)
+models/
+*.pkl
+*.model
+*.weights
+
+# Revenue Cat
+.revenuecat/
+
+# Development tools
+.cursor/
+.vooster/
+
+# Local configuration
+local.json
+local.config.js
+
+# Test files
+test-results/
+playwright-report/
+coverage/
+
+# Documentation (auto-generated)
+docs/generated/
+
+# Backup files
+*.backup
+*.bak
