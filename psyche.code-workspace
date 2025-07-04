@@ -1,0 +1,63 @@
+{
+  "folders": [
+    {
+      "name": "app",
+      "path": "./apps/mobile"
+    },
+    {
+      "name": "server",
+      "path": "./apps/server"
+    },
+    {
+      "name": "packages",
+      "path": "./packages"
+    }
+  ],
+  "settings": {
+    "typescript.preferences.includePackageJsonAutoImports": "auto",
+    "typescript.suggest.autoImports": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.expo": true,
+      "**/.next": true,
+      "**/.turbo": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.expo": true,
+      "**/.next": true
+    },
+    "eslint.workingDirectories": [
+      "apps/mobile",
+      "apps/server",
+      "packages"
+    ],
+    "terminal.integrated.cwd": "${workspaceFolder}"
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "ms-vscode.vscode-typescript-next",
+      "expo.vscode-expo-tools",
+      "ms-vscode.vscode-json",
+      "redhat.vscode-yaml",
+      "ms-vscode.vscode-docker",
+      "github.vscode-github-actions",
+      "folke.vscode-monorepo-workspace",
+      "ms-vscode.vscode-npm-scripts"
+    ]
+  }
+}

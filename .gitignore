@@ -4,15 +4,34 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment Variables
+# Yarn 4
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn/install-state.gz
+
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+
+# Logs
+logs/
+*.log
+
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
@@ -22,40 +41,44 @@ coverage/
 *.lcov
 
 # nyc test coverage
-.nyc_output
+.nyc_output/
 
-# Expo
-.expo/
-dist/
-web-build/
+# Dependency directories
+jspm_packages/
 
-# React Native
-# Logs
-*.log
-metro.config.js
+# Optional npm cache directory
+.npm
 
-# React Native CLI
-.buckconfig
-.flowconfig
-.watchmanconfig
+# Optional eslint cache
+.eslintcache
 
-# TypeScript
-*.tsbuildinfo
-*.d.ts
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
-# Build outputs
-build/
-dist/
-out/
+# Optional REPL history
+.node_repl_history
 
-# IDE Files
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS Files
+# OS
 .DS_Store
 .DS_Store?
 ._*
@@ -64,76 +87,68 @@ out/
 ehthumbs.db
 Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
+# Temporary folders
+tmp/
+temp/
 
-# SQLite Database Files
-*.sqlite
-*.sqlite3
-*.db
+# Local development
+*.local
 
-# Logs
-logs/
-*.log
+# TypeScript
+*.tsbuildinfo
 
-# Runtime cache
-.cache/
-.parcel-cache/
+# Expo (React Native specific)
+.expo/
+dist/
+web-build/
 
-# Supabase
-.supabase/
+# React Native
+*.orig.*
+web-build/
 
-# AWS CLI
+# @generated expo
+expo-env.d.ts
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifacts
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+# AWS Credentials
 .aws/
 
-# Sentry
-.sentryclirc
-
-# EAS
-.eas/
-
-# Railway
-.railway/
-
-# Redis
-dump.rdb
-
-# Nest.js
-dist/
-.webpack/
-
-# tRPC
-.trpc/
-
-# Expo SecureStore
-SecureStore/
-
-# AI/ML Models (if storing locally)
-models/
-*.pkl
-*.model
-*.weights
-
-# Revenue Cat
-.revenuecat/
-
-# Development tools
-.cursor/
-.vooster/
-
-# Local configuration
-local.json
-local.config.js
-
-# Test files
-test-results/
-playwright-report/
-coverage/
-
-# Documentation (auto-generated)
-docs/generated/
-
-# Backup files
-*.backup
-*.bak
+# Local Postgres dumps
+*.dump
